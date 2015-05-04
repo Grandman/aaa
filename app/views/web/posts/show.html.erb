@@ -1,0 +1,4 @@
+<%= @post.title %><br />
+<%= @post.content %><br />
+<%= link_to "удаление", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }%>
+<%= link_to "редактирование", edit_post_path(@post) %>

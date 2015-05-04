@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  scope module:
-            :web do
+  scope module: :web do
     root to: 'welcome#index'
+    resources :posts
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
